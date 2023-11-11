@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const prevButton = document.getElementById('prev');
     const nextButton = document.getElementById('next');
     
-    // Especificando os caminhos completos para as imagens
     const images = [
       'img/fundo-inicio.jpg',
       'img/fundo2.jpg',
@@ -47,14 +46,13 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }
   
-    // Iniciar o slider com a primeira imagem
     changeSlide();
   
-    // Adicionar eventos de clique para as setas
+    // Toque para setas
     prevButton.addEventListener('click', prevSlide);
     nextButton.addEventListener('click', nextSlide);
   
-    // Adicionar eventos de toque para a tela sensível ao toque
+    // Toque na tela do celular
     slider.addEventListener('touchstart', handleTouchStart, false);
     slider.addEventListener('touchend', handleTouchEnd, false);
   });
