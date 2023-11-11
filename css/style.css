@@ -140,7 +140,6 @@ html {
 }
 @media (max-width: 415px) {
     .welcome {
-        margin-top: 5em;
         padding-top: 5em;
     }
     .welcome h1 {
